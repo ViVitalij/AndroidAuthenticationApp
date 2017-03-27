@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.losk.authentication.activities.LoginActivity"
+    android:paddingTop="56dp"
+    android:paddingRight="24dp"
+    android:paddingLeft="24dp">
+
+    <!--  Loska Logo -->
+    <ImageView
+        android:id="@+id/login_ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/logo_description"
+        app:srcCompat="@drawable/logo" />
+
+    <!--  Email Label -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_InputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_ImageView">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="viewStart" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--  Password Label -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_InputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/email_InputLayout">
+
+        <EditText
+            android:id="@+id/password_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Show Password CheckBox -->
+    <CheckBox
+        android:id="@+id/passwordVisibility_CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_InputLayout"
+        android:hint="@string/show_password" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/login_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordVisibility_CheckBox"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/login_button" />
+
+    <!-- Create account link -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/createAccount_InputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_Button">
+
+        <TextView
+            android:id="@+id/linkSignUp_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/createAccount_link" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

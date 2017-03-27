@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Authentication</string>
+    <string name="logo_description">Inscription Loska</string>
+    <string name="password">Password</string>
+    <string name="show_password">Show password</string>
+    <string name="login_button">Login</string>
+    <string name="createAccount_link">No account yet? Create one</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="birthday">Birthday:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="street_name">Street name</string>
+    <string name="address">Address:</string>
+    <string name="house_number">House number</string>
+    <string name="flat_number">Flat number</string>
+    <string name="postal_code">Postal code</string>
+    <string name="country_name">Country</string>
+    <string name="email">E-mail</string>
+    <string name="phone_number">Mobile number</string>
+    <string name="reEnter_password">Re-enter your password</string>
+    <string name="create_account">Create account</string>
+    <string name="alreadyMember_link">Already a member? Login</string>
+</resources>

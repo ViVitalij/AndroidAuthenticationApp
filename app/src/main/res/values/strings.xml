@@ -21,4 +21,6 @@
     <string name="reEnter_password">Re-enter your password</string>
     <string name="create_account">Create account</string>
     <string name="alreadyMember_link">Already a member? Login</string>
+    <string name="createAccount_toast">An account has been created</string>
+    <string name="email_error">enter a valid email address</string>
 </resources>

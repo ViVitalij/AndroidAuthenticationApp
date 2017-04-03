@@ -36,6 +36,7 @@ public class CreateAccount extends AppCompatActivity {
     //TODO validation
     @OnClick(R.id.createAccount_Button)
     protected void createAccountButtonClicked() {
+
         if (validateEmail()) {
             Intent returnIntent = new Intent();
             returnIntent.putExtra("resultString", emailCreateAccount_EditText.getText().toString());
@@ -55,7 +56,7 @@ public class CreateAccount extends AppCompatActivity {
         String email = emailCreateAccount_EditText.getText().toString();
         boolean returnFlag = false;
         if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            emailCreateAccount_EditText.setError("enter a valid email address");
+            emailCreateAccount_EditText.setError(getString(R.string.email_error));
         } else {
             emailCreateAccount_EditText.setError(null);
             returnFlag = true;
